@@ -14,16 +14,57 @@
 html {
   color: #fff;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1;
   background: #222222;
   overflow: hidden;
+  font-family: sans-serif;
 }
 
-#wrapper {
-  text-align: center;
-  padding-top: 50vh;
-  padding-bottom: 50vh;
+a {
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+}
 
+a:hover {
+  transition: 0.4s;
+  color: #999999;
+}
+
+fp {
+  font-size: inherit;
+  line-height: inherit;
+  margin: inherit;
+  padding: inherit;
+  color: gray;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1; /* takes all available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+}
+
+.footer {
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #img-l {
@@ -43,7 +84,7 @@ img {
 
 .cimg:hover {
   transition: 0.2s;
-  filter: drop-shadow(0 0 0.5em rgb(255, 255, 255));
+  filter: drop-shadow(0 0 0.2em rgb(255, 255, 255));
   color: #fff;
 }
 
