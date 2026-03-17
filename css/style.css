@@ -51,6 +51,16 @@ h1 {
   min-height: 100vh;
 }
 
+.impressum {
+  flex: 1; /* takes all available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;
+  text-align: center;
+  max-width: 50vw;
+}
+
 .content {
   flex: 1; /* takes all available space */
   display: flex;
